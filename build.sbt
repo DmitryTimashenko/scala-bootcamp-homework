@@ -75,3 +75,12 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % 
 
 // To learn more about multi-project builds, head over to the official sbt
 // documentation at http://www.scala-sbt.org/documentation.html
+
+val catsVersion = "2.2.0"
+val catsTaglessVersion = "0.11"
+val catsEffectVersion = "2.2.0"
+
+libraryDependencies ++= Seq(
+  "org.typelevel" %% "cats-core" % catsVersion,
+  "org.typelevel" %% "cats-effect" % catsEffectVersion
+)
